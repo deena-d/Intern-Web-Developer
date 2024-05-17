@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.signup-form {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .signup-form {
+    width: 50%;
+  }
+}
+
+#signupForm {
+  color: gray;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.signup-form h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E9F8E5;
+  width: 100%;
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .illustration {
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.322);
+  border-radius: 15px;
+  color: #333; /* Corrected color for better readability */
+}
+
+#sign-up {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 250px;
+  margin-top: 10px;
+}
+
+.or {
+  margin: 20px 0;
+  color: #999;
+}
+
+.social-signup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.social-btn.google {
+  color: #db4437;
+}
+
+.social-btn.facebook {
+  color: #4267B2;
+}
+
+.social-btn.apple {
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+}
+
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input-container input {
+  padding-left: 30px;
+  color: #333; /* Corrected color for better readability */
+}
+
+.input-container svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  width: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .illustration {
+    padding: 20px;
+  }
+
+  .signup-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .illustration img {
+    width: 70%; 
+    height: auto;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 8px; 
+  }
+}
